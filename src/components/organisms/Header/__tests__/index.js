@@ -1,12 +1,12 @@
-// Test Cards Component
+// Test Header Component
 // --------------------------------------------------------
 
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Cards from '../../index';
+import Header from '../../index';
 
 test('Input is match the snapshot', () => {
-  const component = renderer.create(Cards);
+  const component = renderer.create(Header);
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

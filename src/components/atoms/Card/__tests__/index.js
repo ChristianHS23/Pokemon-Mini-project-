@@ -2,13 +2,11 @@
 // --------------------------------------------------------
 
 import React from 'react';
-import Card from '../../index';
 import renderer from 'react-test-renderer';
+import Card from '../../index';
 
 test('Input is match the snapshot', () => {
-const component = renderer.create(
-Card,
-);
-let tree = component.toJSON();
-expect(tree).toMatchSnapshot();
+  const component = renderer.create(Card);
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });

@@ -3,9 +3,14 @@ Styles for Card component
 ========================================================================== */
 
 // import mixin and variables
-@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin", "../../../assets/styles/project/init/variables";
+// @import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin", "../../../assets/styles/project/init/variables";
 
 // Start styles Card component
 .a-card {
-
+  width: 20rem;
+  margin: 12px;
+  background-color: lightseagreen;
+}
+.a-card-title {
+  color: red($color: #ac2121) !important
 }

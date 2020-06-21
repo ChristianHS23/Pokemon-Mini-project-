@@ -1,8 +1,14 @@
 /* ==========================================================================
-Styles for {{ properCase name }} component
+Styles for Header component
 ========================================================================== */
 
-// Start styles {{ properCase name }} component
-.{{ prefix-component-style-name type }}-{{ dashCase name}} {
+// import mixin and variables
 
+// Start styles Header component
+.o-header {
+
+}
+
+.o-header-img {
+  max-height: 2rem;
 }

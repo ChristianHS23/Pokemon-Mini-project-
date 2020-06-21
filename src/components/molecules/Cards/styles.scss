@@ -3,9 +3,16 @@ Styles for Cards component
 ========================================================================== */
 
 // import mixin and variables
-@import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin", "../../../assets/styles/project/init/variables";
+// @import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin", "../../../assets/styles/project/init/variables";
 
 // Start styles Cards component
 .m-cards {
+  .m-cards-h1 {
+    text-align: left;
+    margin: 2rem;
+  }
+}
 
+.m-cards-columns{
+  margin: 3rem;
 }

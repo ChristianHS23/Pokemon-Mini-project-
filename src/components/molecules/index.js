@@ -4,6 +4,6 @@
 // eslint-disable-next-line import/no-cycle
 import Cards from './Cards';
 
-export {
-  Cards
-};
+import Jumbotron from './Jumbotron';
+
+export { Cards, Jumbotron };
