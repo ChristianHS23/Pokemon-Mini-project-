@@ -7,4 +7,4 @@ export const getListPokemon = (offset, limit) =>
   axios.get(`${apiUrl}/pokemon?offset=${offset}&limit=${limit}`);
 
 export const getPokemonDetail = (pokemonName) =>
-  axios.post(`${apiUrl}pokemon/${pokemonName}`, {});
+  axios.get(`${apiUrl}/pokemon/${pokemonName}`, {});

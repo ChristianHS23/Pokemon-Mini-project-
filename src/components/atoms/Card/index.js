@@ -10,13 +10,13 @@ import './styles.scss';
 
 const CardFunction = ({ imgSource, title, description }) => (
   <Card className='a-card'>
-    <Card.Img variant='top' src={imgSource} />
-    <Card.Body>
+    <Card.Img className='a-card-img' variant='top' src={imgSource} />
+    <Card.Body className='a-card-body'>
       <Card.Title className='a-card-title'>{title}</Card.Title>
       {description && (
         <Card.Text className='a-card-description'>{description}</Card.Text>
       )}
-      <Button variant='primary'>Go somewhere</Button>
+      {/* <Button variant='primary'>Go somewhere</Button> */}
     </Card.Body>
   </Card>
 );

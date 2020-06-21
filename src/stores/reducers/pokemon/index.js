@@ -7,6 +7,8 @@ import {
   CLEAR_ERROR,
   SET_ERROR,
   INIT_DATA,
+  SET_POKEMON_DATA_MASTER,
+  SET_POKEMON_DATA_SHOW,
 } from 'stores/actions/pokemon';
 
 const initialState = {
@@ -14,6 +16,8 @@ const initialState = {
   isDoubleSubmit: false,
   isOTPBlocked: false,
   isSubmitting: false,
+  pokemonMaster: {},
+  pokemonShow: [],
   stepContent: '',
   error: {},
   errRespOTP: {},
@@ -25,6 +29,16 @@ export default (state = initialState, { payload, type }) => {
       return {
         ...state,
         isLoading: payload,
+      };
+    case SET_POKEMON_DATA_MASTER:
+      return {
+        ...state,
+        pokemonMaster: payload,
+      };
+    case SET_POKEMON_DATA_SHOW:
+      return {
+        ...state,
+        pokemonShow: [...payload],
       };
     case SET_ERROR:
       return {
