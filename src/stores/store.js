@@ -1,30 +1,17 @@
+/* eslint-disable comma-dangle */
 import { createStore, applyMiddleware, compose } from 'redux';
 import { routerMiddleware } from 'connected-react-router';
 import thunk from 'redux-thunk';
 import { createBrowserHistory } from 'history';
-import timerMiddleware from 'redux-timer';
-import {
-  requestInterceptors,
-  responseInterceptors
-} from 'utils/middlewares/interceptors';
-import authMiddlewares from 'utils/middlewares/authMiddleware';
 import createRootReducer from './reducers';
 
-requestInterceptors();
-responseInterceptors();
-
 export const history = createBrowserHistory({
-  basename: process.env.REACT_APP_ROUTER_BASE || ''
+  basename: process.env.REACT_APP_ROUTER_BASE || '',
 });
 
 const initialState = {};
 const enhancers = [];
-const middleware = [
-  thunk,
-  routerMiddleware(history),
-  authMiddlewares,
-  timerMiddleware
-];
+const middleware = [thunk, routerMiddleware(history)];
 
 // if (process.env.NODE_ENV === 'development') {
 /* eslint-disable */

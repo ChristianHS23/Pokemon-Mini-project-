@@ -6,9 +6,8 @@ Styles for Header component
 
 // Start styles Header component
 .o-header {
-
+  .o-header-img {
+    max-height: 2rem;
+  }
 }
 
-.o-header-img {
-  max-height: 2rem;
-}
