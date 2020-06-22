@@ -11,7 +11,7 @@ import { Card, Button, OverlayTrigger, Popover } from 'react-bootstrap';
 import { getType } from 'utils/helpers';
 import './styles.scss';
 
-const CardFunction = ({ imgSource, title, description, item }) => (
+const CardFunction = ({ imgSource, title, description, item, isMobile }) => (
   <Card className='a-card'>
     <Card.Img className='a-card-img' variant='top' src={imgSource} />
     <Card.Body className='a-card-body'>
@@ -21,10 +21,10 @@ const CardFunction = ({ imgSource, title, description, item }) => (
       )}
       <OverlayTrigger
         trigger='click'
-        key='bottom'
-        placement='bottom'
+        key={`${isMobile ? 'top' : 'bottom'}`}
+        placement={`${isMobile ? 'top' : 'bottom'}`}
         overlay={
-          <Popover id='popover-positioned-bottom'>
+          <Popover id={`popover-positioned-${isMobile ? 'top' : 'bottom'}`}>
             <Popover.Title as='h3'>{title} Stats</Popover.Title>
             <Popover.Content className='a-card-popover-content'>
               {item.stats.map((stat) => (
@@ -54,6 +54,7 @@ CardFunction.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   item: PropTypes.object,
+  isMobile: PropTypes.bool,
 };
 
 CardFunction.defaultProps = {
@@ -61,6 +62,7 @@ CardFunction.defaultProps = {
   title: '',
   description: '',
   item: {},
+  isMobile: false,
 };
 
 export default CardFunction;

@@ -14,7 +14,7 @@ import {
   FormControl,
   Button,
 } from 'react-bootstrap';
-import PokemonImage from 'assets/img/pokemon.png';
+import PokemonImage from 'assets/img/pokeball.png';
 
 class Header extends Component {
   // state = {};

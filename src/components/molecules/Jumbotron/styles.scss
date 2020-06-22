@@ -4,6 +4,12 @@ Styles for Jumbotron component
 
 // Start styles Jumbotron component
 .m-jumbotron {
+  align-items: center;
+  text-align: center;
   background-image: url(../../../assets/PokemonBackground.jpg);
   background-size: cover;
+  @media screen and ( max-width: 768px){
+    height: 20rem;
+  }
+  height: 30rem;
 }

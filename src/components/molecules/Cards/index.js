@@ -19,6 +19,7 @@ const Cards = ({ listCard, isMobile }) => {
             description={item.description}
             imgSource={item.sprites.front_default}
             item={item}
+            isMobile={isMobile}
           />
         ))}
       </div>
