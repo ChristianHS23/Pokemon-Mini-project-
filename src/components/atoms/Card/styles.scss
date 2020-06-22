@@ -1,0 +1,28 @@
+/* ==========================================================================
+Styles for Card component
+========================================================================== */
+
+// import mixin and variables
+// @import "../../../assets/styles/helper/function", "../../../assets/styles/helper/mixin", "../../../assets/styles/project/init/variables";
+
+// Start styles Card component
+.a-card {
+  width: 16rem;
+  margin: 12px;
+  background-color: whitesmoke;
+  border-radius: 2rem;
+  .a-card-img {
+    background-image: url(../../../assets/border.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem
+  }
+  .a-card-body {
+    background-color: whitesmoke;
+    border-radius: 2rem
+  }
+}
+
+.a-card-title {
+  color: red($color: #ac2121) !important
+}
