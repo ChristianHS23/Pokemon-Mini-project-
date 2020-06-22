@@ -4,5 +4,6 @@ Styles for Jumbotron component
 
 // Start styles Jumbotron component
 .m-jumbotron {
-  background-color: lightgoldenrodyellow;
+  background-image: url(../../../assets/PokemonBackground.jpg);
+  background-size: cover;
 }

@@ -25,7 +25,7 @@ class Header extends Component {
     const { propsName } = this.props;
 
     return (
-      <Navbar bg='secondary' expand='lg' className='o-header'>
+      <Navbar bg='info' expand='lg' className='o-header'>
         <Navbar.Brand href='#home'>
           <img src={PokemonImage} className='o-header-img' alt='logo' />
         </Navbar.Brand>
@@ -48,7 +48,7 @@ class Header extends Component {
           </Nav>
           <Form inline>
             <FormControl type='text' placeholder='Search' className='mr-sm-2' />
-            <Button variant='outline-success'>Search</Button>
+            {/* <Button variant='outline-info'>Search</Button> */}
           </Form>
         </Navbar.Collapse>
       </Navbar>
