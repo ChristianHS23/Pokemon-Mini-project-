@@ -18,6 +18,7 @@ const Cards = ({ listCard, isMobile }) => {
             title={capitalize(item.name)}
             description={item.description}
             imgSource={item.sprites.front_default}
+            item={item}
           />
         ))}
       </div>
