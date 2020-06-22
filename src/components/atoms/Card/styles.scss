@@ -21,6 +21,12 @@ Styles for Card component
     background-color: whitesmoke;
     border-radius: 2rem
   }
+  .a-card-popover-content{
+    .p-popover-content{
+      text-align: center;
+    }
+
+  }
 }
 
 .a-card-title {

@@ -7,3 +7,9 @@ export const capitalize = (s) => {
 export const isBottom = (el) => {
   return el.getBoundingClientRect().bottom <= window.innerHeight;
 };
+
+export const getType = (types) => {
+  const typesResult = [];
+  types.map(({ type }) => typesResult.push(type.name));
+  return typesResult.join(', ');
+};
