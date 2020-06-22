@@ -25,7 +25,7 @@ class Header extends Component {
     const { propsName } = this.props;
 
     return (
-      <Navbar bg='info' expand='lg' className='o-header'>
+      <Navbar bg='dark' expand='lg' className='o-header'>
         <Navbar.Brand href='#home'>
           <img src={PokemonImage} className='o-header-img' alt='logo' />
         </Navbar.Brand>

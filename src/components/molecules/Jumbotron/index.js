@@ -7,22 +7,24 @@ import PropTypes from 'prop-types';
 import { Jumbotron, Button } from 'react-bootstrap';
 import './styles.scss';
 
-const JumbotronFunction = ({ propsName }) => (
+const JumbotronFunction = ({ onClick }) => (
   <Jumbotron className='m-jumbotron'>
     <h1>Welcome</h1>
     <p>Hundred Pokemons waiting to discover</p>
     <p>
-      <Button variant='primary'>Explore Now</Button>
+      <Button variant='primary' onClick={onClick}>
+        Explore Now
+      </Button>
     </p>
   </Jumbotron>
 );
 
 JumbotronFunction.propTypes = {
-  propsName: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 JumbotronFunction.defaultProps = {
-  propsName: '',
+  onClick: () => {},
 };
 
 export default JumbotronFunction;

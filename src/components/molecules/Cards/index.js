@@ -10,7 +10,7 @@ import './styles.scss';
 
 const Cards = ({ listCard, isMobile }) => {
   return (
-    <div className='m-cards'>
+    <div className='m-cards' id='card-pokemon'>
       <h1 className='m-cards-h1'>Here the list</h1>
       <div className={`${isMobile ? '' : 'row row-cols-5'} m-cards-columns`}>
         {listCard.map((item, index) => (

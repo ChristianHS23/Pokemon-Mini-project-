@@ -117,15 +117,21 @@ class App extends Component {
     }
   };
 
+  focusCard = () => {
+    const elmnt = document.getElementById('card-pokemon');
+    elmnt.scrollIntoView();
+  };
+
   render() {
     const {
+      focusCard,
       props: { listPokemon },
       state: { isMobile },
     } = this;
     return (
       <div className='App'>
         <Header />
-        <Jumbotron />
+        <Jumbotron onClick={focusCard} />
         <Cards listCard={listPokemon} isMobile={isMobile} />
         <Spinner animation='border' variant='info' />
       </div>
