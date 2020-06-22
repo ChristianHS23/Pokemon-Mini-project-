@@ -8,6 +8,7 @@ import { Cards, Header, Jumbotron } from 'components';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { getListPokemonData, getListNextPokemon } from 'stores/actions/pokemon';
+import { Spinner } from 'react-bootstrap';
 import { isBottom } from 'utils/helpers';
 import './App.scss';
 
@@ -126,6 +127,7 @@ class App extends Component {
         <Header />
         <Jumbotron />
         <Cards listCard={listPokemon} isMobile={isMobile} />
+        <Spinner animation='border' variant='info' />
       </div>
     );
   }

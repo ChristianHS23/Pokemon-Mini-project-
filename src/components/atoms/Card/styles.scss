@@ -12,9 +12,9 @@ Styles for Card component
   background-color: whitesmoke;
   border-radius: 2rem;
   .a-card-img {
-    background-image: url(../../../assets/border.png);
+    background-image: url(../../../assets/background-card.jpg);
     background-size: cover;
-    background-position: center;
+    // background-position: center;
     border-radius: 2rem
   }
   .a-card-body {
